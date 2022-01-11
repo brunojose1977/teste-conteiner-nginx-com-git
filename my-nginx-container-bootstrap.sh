@@ -31,7 +31,7 @@ git config --global user.name "brunojose1977"
 git config --global user.email "brunojose1977@yahoo.com"
 
 #Clonando o repositório que guarda os artefatos que são gerados a partir do conteiner nginx
-git clone https://brunojose1977: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@github.com/brunojose1977/nginx-conteiner-integration-test.git
+git clone https://brunojose1977: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@github.com/brunojose1977/nginx-conteiner-integration-test.git
 
 #Criando um arquivo de teste para testar a integração com o repositório remoto
 cd nginx-conteiner-integration-test
