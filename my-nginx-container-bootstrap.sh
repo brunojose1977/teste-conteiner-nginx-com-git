@@ -23,10 +23,7 @@ apt-get update -y
 
 echo "Instalando o GIT"
 apt-get install -y git
-#ssh-keygen -t rsa -b 4096 -C "brunojose1977@yahoo.com.br" -P "bjsoft18"
-#cat bjsoft18.pub
 git init
-#git clone --branch=master https://github.com/brunojose1977/conteiner-nginx.git
 #Clonando o repositório com o usuário e o token do github
 git clone https://brunojose1977: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@github.com/brunojose1977/teste-conteiner-nginx-com-git
 cd conteiner-nginx
@@ -42,7 +39,6 @@ git add test-from-container.txt
 #Daqui pra baixo só funciona se adicionar a chave pública ao GITHUB da conta brunojose1977
 git commit -m "First commit from my-nginx container!"
 git remote add origin https://github.com/brunojose1977/teste-conteiner-nginx-com-git
-#git push -u origin https://github.com/brunojose1977/conteiner-nginx.git
 git push
 
 # Instalação será feita em /usr/bin/git
