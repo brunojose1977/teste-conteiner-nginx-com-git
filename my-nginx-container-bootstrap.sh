@@ -29,10 +29,12 @@ git init
 #git clone --branch=master https://github.com/brunojose1977/conteiner-nginx.git
 #Clonando o repositório com o usuário e o token do github
 git clone https://brunojose1977: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@github.com/brunojose1977/conteiner-nginx.git
+git clone https://brunojose1977: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@github.com/brunojose1977/teste-conteiner-nginx-com-git
 cd conteiner-nginx
 git config --global user.name "brunojose1977"
 git config --global user.email "brunojose1977@yahoo.com"
 git config --global remote.origin.url=https://github.com/brunojose1977/conteiner-nginx.git
+git config --global remote.origin.url=https://github.com/brunojose1977/teste-conteiner-nginx-com-git
 git config --global branch.master.remote=origin
 git config --global branch.master.merge=refs/heads/master
 
@@ -42,6 +44,7 @@ git add test-from-container.txt
 #Daqui pra baixo só funciona se adicionar a chave pública ao GITHUB da conta brunojose1977
 git commit -m "First commit from my-nginx container!"
 git remote add origin https://github.com/brunojose1977/conteiner-nginx.git
+git remote add origin https://github.com/brunojose1977/teste-conteiner-nginx-com-git
 #git push -u origin https://github.com/brunojose1977/conteiner-nginx.git
 git push
 
