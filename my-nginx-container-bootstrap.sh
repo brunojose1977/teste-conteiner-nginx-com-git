@@ -21,7 +21,7 @@ apt-get update -y
 #nmon
 #echo " "
 
-echo "Instalando o GIT"    
+echo "Instalando o GIT"
 apt-get install -y git
 git init
 #Clonando o repositório com o usuário e o token do github
