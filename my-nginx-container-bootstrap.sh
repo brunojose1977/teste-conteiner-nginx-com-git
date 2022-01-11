@@ -31,7 +31,7 @@ git config --global user.name "brunojose1977"
 git config --global user.email "brunojose1977@yahoo.com"
 
 #Clonando o repositório com o usuário e o token do github
-git clone https://brunojose1977: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@github.com/brunojose1977/teste-conteiner-nginx-com-git
+git clone https://brunojose1977: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@github.com/brunojose1977/teste-conteiner-nginx-com-git
 
 #Criando um arquivo de teste para testar a integração com o repositório remoto
 ##cd teste-conteiner-nginx-com-git
