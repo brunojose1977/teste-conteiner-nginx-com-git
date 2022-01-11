@@ -3,8 +3,7 @@
 ##Configurações do conteiner my-nginx
 # copiando o arquivo de repositórios de pacotes com repositórios necessários para instalar o Git.
 clear &&
-cd /home/sibbr/teste-conteiner-ubuntu-com-ferramentas &&
-sudo docker run --name my-nginx --volume /home/sibbr/teste-conteiner-ubuntu-com-ferramentas/my-volume:/usr/share/nginx/html:ro -it -d -p 8081:80 nginx &&
+sudo docker run --name my-nginx --volume my-volume:/usr/share/nginx/html:ro -it -d -p 8081:80 nginx &&
 sudo docker start my-nginx &&
 sudo docker cp repositorios-necessarios-git.list my-nginx:/etc/apt/sources.list &&
 sudo docker cp my-nginx-container-bootstrap.sh my-nginx:./ &&
