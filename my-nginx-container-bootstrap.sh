@@ -30,22 +30,19 @@ apt-get install -y git
 git config --global user.name "brunojose1977"
 git config --global user.email "brunojose1977@yahoo.com"
 
-#Clonando o repositório com o usuário e o token do github
-git clone https://brunojose1977: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@github.com/brunojose1977/teste-conteiner-nginx-com-git
+#Clonando o repositório que guarda os artefatos que são gerados a partir do conteiner nginx
+git clone https://brunojose1977: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@github.com/brunojose1977/nginx-conteiner-integration-test.git
 
 #Criando um arquivo de teste para testar a integração com o repositório remoto
-##cd teste-conteiner-nginx-com-git
-##echo "Test from NGIX container!" > test-from-container.txt
-##git add test-from-container.txt
-##git commit -m "First commit from my-nginx container!"
+cd nginx-conteiner-integration-test
+echo "Test from NGIX container!" > test-from-container.txt
+git add test-from-container.txt
+git commit -m "First commit from my-nginx container!"
 
 #Atualizando o repositório remoto
-##git push
-##git status
+git push
+git status
 
-echo " "
 #echo "Ferramentas instaladas! Experimente: htop, vtop, atop, nmon!"
 ##echo "FIM - Verificar se a instalação do GIT ocorreu com sucesso e se o arquivo test-from-container.txt foi commitado ao repositório no GITHUB."
 ##echo " "
-
-##git status
