@@ -41,7 +41,6 @@ echo "Test from NGIX container!" > test-from-container.txt
 git add test-from-container.txt
 #Daqui pra baixo só funciona se adicionar a chave pública ao GITHUB da conta brunojose1977
 git commit -m "First commit from my-nginx container!"
-git remote add origin https://github.com/brunojose1977/conteiner-nginx.git
 git remote add origin https://github.com/brunojose1977/teste-conteiner-nginx-com-git
 #git push -u origin https://github.com/brunojose1977/conteiner-nginx.git
 git push
