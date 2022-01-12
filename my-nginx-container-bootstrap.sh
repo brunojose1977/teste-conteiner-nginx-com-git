@@ -31,18 +31,18 @@ git config --global user.name "brunojose1977"
 git config --global user.email "brunojose1977@yahoo.com"
 
 #Clonando o repositório que guarda os artefatos que são gerados a partir do conteiner nginx
-#####git clone https://brunojose1977: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@github.com/brunojose1977/nginx-conteiner-integration-test.git
+git clone https://brunojose1977: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@github.com/brunojose1977/nginx-conteiner-integration-test.git
 
 #Criando um arquivo de teste para testar a integração com o repositório remoto
-#####cd nginx-conteiner-integration-test
-#####echo "Test from NGIX container!" > test-from-container.txt
-#####git add test-from-container.txt
-#####git commit -m "First commit from my-nginx container!"
+cd nginx-conteiner-integration-test
+echo "Test from NGIX container!" > test-from-container.txt
+git add test-from-container.txt
+git commit -m "First commit from my-nginx container!"
 
 #Atualizando o repositório remoto
-#####git push
-#####git status
+git push
+git status
 
-#echo "Ferramentas instaladas! Experimente: htop, vtop, atop, nmon!"
-##echo "FIM - Verificar se a instalação do GIT ocorreu com sucesso e se o arquivo test-from-container.txt foi commitado ao repositório no GITHUB."
-##echo " "
+echo "Verificar no repositório brunojose1977/nginx-conteiner-integration-test o arquivo test-from-container.txt foi criado!"
+echo " ** FIM ** "
+echo " "
