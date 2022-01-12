@@ -36,7 +36,7 @@ git config --global user.email "brunojose1977@yahoo.com"
 #### Como melhoria seria bom colocar esse token em variável na chamada do DOCKER RUN com parâmetro -e token=XXXXXXXXXX
 
 #Clonando o repositório que guarda os artefatos que são gerados a partir do conteiner nginx
-#### git clone https://brunojose1977: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@github.com/brunojose1977/nginx-conteiner-integration-test.git
+#### git clone https://brunojose1977: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@github.com/brunojose1977/nginx-conteiner-integration-test.git
 
 #Criando um arquivo de teste para testar a integração com o repositório remoto
 #### cd nginx-conteiner-integration-test
