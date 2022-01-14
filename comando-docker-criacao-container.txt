@@ -10,6 +10,13 @@ sudo docker start my-nginx &&
 sudo docker exec -it my-nginx ./my-nginx-container-bootstrap.sh &&
 sudo docker exec -it my-nginx bash
 
+
+##Configurações do conteiner my-nginx sem chamar o scriptshell pos container creation
+clear &&
+sudo docker run --name my-nginx --volume my-volume:/usr/share/nginx/html:ro -it -d -p 8081:80 my-nginx-image &&
+sudo docker start my-nginx &&
+sudo docker exec -it my-nginx bash
+
 # Comando para parar e destruir o conteiner
 sudo docker rm -f my-nginx
 
