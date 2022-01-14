@@ -5,7 +5,7 @@
 
 #echo "Iniciando a Instalação das ferramentas no Conteiner Linux Ubuntu"
 #echo " "
-echo "Atualizando o Ubuntu"
+#echo "Atualizando o Ubuntu"
 apt-get update -y
 #Instalação do GIT
 # Instalação será feita em /usr/bin/git
