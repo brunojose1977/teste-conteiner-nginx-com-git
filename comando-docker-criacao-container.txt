@@ -1,14 +1,17 @@
 #Comandos da criacao do conteiner
 
+#Criação da imagem
+sudo docker build --tag my-nginx-image .
+
 ##Configurações do conteiner my-nginx
-# copiando o arquivo de repositórios de pacotes com repositórios necessários para instalar o Git.
 clear &&
-sudo docker run --name my-nginx --volume my-volume:/usr/share/nginx/html:ro -it -d -p 8081:80 nginx &&
+sudo docker run --name my-nginx --volume my-volume:/usr/share/nginx/html:ro -it -d -p 8081:80 my-nginx-image &&
 sudo docker start my-nginx &&
-sudo docker cp repositorios-necessarios-git.list my-nginx:/etc/apt/sources.list &&
-sudo docker cp my-nginx-container-bootstrap.sh my-nginx:./ &&
 sudo docker exec -it my-nginx ./my-nginx-container-bootstrap.sh &&
 sudo docker exec -it my-nginx bash
 
 # Comando para parar e destruir o conteiner
-sudo docker stop my-nginx && sudo docker rm my-nginx
+sudo docker rm -f my-nginx
+
+#Comando para destruir a imagem
+sudo docker rmi my-nginx-image
