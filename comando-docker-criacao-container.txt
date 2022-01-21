@@ -3,6 +3,12 @@
 #Criação da imagem
 sudo docker build --tag my-nginx-image .
 
+#Criação de uma tag para versionamento pós build (replicando)
+sudo docker tag my-nginx-image my-nginx-image:1.0
+
+#Criando a versão já no Build
+sudo docker build --tag my-nginx-image:2.0 .
+
 ##Configurações do conteiner my-nginx
 clear &&
 sudo docker run --name my-nginx --volume my-volume:/usr/share/nginx/html:ro -it -d -p 8081:80 my-nginx-image &&
